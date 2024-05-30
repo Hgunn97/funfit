@@ -8,7 +8,7 @@ public class DbResource {
 	public static Connection getDbConnection () {
 		try {
 	Class.forName("com.mysql.cj.jdbc.Driver");
-Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/FunFitDB", "hannah", "hannah@123");
+Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/FunFitDB", "username", "password");
 return con;
 		} catch (Exception e) {
 			System.err.println(e);
